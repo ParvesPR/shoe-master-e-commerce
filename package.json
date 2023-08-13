@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "sass": "^1.65.1"
+  },
+  "name": "shoe-master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./sass/main.scss ./css/style.css",
+    "sass:watch": "sass --watch ./sass/main.scss ./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
