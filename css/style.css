@@ -6,9 +6,21 @@
   outline: none;
 }
 
-body {
-  background-color: black;
-  color: white;
+a,
+p,
+ul,
+li,
+span {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
