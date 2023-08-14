@@ -1,2 +1,8 @@
 @import "./base/index";
+@import "./utilities/index";
 
+
+.link-text {
+    font-size:sizes(section-title);
+    font-weight: weights(bold)
+}
