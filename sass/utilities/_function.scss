@@ -5,3 +5,7 @@
 @function sizes($size-name) {
     @return map-get($font-sizes, $size-name);
 }
+
+@function marginTop($mt-name) {
+    @return map-get($margin-top, $mt-name );
+}

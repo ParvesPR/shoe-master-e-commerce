@@ -1,9 +1,9 @@
 $primary-color: #828BB2;
 $primary-text: #fff;
-$secondary-text: #000;
+$secondary-text: #777;
 $accent-text: #ffba00;
 $background-color: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-
+$line-height: 1.5;
 $font-weights: (
     "thin": 300,
     "regular":400,
@@ -17,3 +17,10 @@ $font-sizes: (
     "title":2.3rem,
     "section-title":3.7rem,
 );
+$margin-top: (
+    "mt10":10px,
+    "mt15":15px,
+    "mt20":20px,
+    "mt25":25px,
+    "mt30":30px,
+    )

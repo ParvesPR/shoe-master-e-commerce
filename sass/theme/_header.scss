@@ -1,17 +1,35 @@
-banner-area {
-    background: url(../assets/img/banner/banner-bg.jpg);
+.banner-area {
+    background: url(../../assets/img/banner/banner-bg.jpg) no-repeat center;
     background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 .container {
+    @include container();
     @include flexAround();
-    padding: 20px 10px;
+    padding: 50px 10px;
 
-    .banner-content h1 {
-        font-size: sizes(section-title);
+    .banner-content {
+        flex: 40%;
+
+        & h1 {
+            font-size: sizes(section-title);
+        }
+
+        & p {
+            color: $secondary-text;
+            font-size: sizes(small);
+            line-height: $line-height;
+            margin-top: marginTop(mt25);
+        }
     }
 
-    .banner-img img {
-        @include imgWidth()
+    .banner-img {
+        flex: 60%;
+
+        & img {
+            @include imgWidth();
+        }
     }
 }
