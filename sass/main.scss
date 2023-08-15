@@ -1,8 +1,8 @@
 @import "./base/index";
 @import "./utilities/index";
+@import "./theme/index";
 
-
-.link-text {
-    font-size:sizes(section-title);
-    font-weight: weights(bold)
+@mixin container {
+    width: 1140px;
+    margin: 0 auto;
 }

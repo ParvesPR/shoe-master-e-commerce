@@ -21,11 +21,28 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.link-text {
+banner-area {
+  background: url(../assets/img/banner/banner-bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.container .banner-content h1 {
   font-size: 3.7rem;
-  font-weight: 600;
+}
+.container .banner-img img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

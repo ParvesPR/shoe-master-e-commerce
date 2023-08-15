@@ -1,0 +1,17 @@
+banner-area {
+    background: url(../assets/img/banner/banner-bg.jpg);
+    background-size: cover;
+}
+
+.container {
+    @include flexAround();
+    padding: 20px 10px;
+
+    .banner-content h1 {
+        font-size: sizes(section-title);
+    }
+
+    .banner-img img {
+        @include imgWidth()
+    }
+}
