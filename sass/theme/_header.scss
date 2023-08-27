@@ -5,7 +5,7 @@
     background-attachment: fixed;
 }
 
-.container {
+.content-wrapper {
     @include container();
     @include flexAround();
     padding: 50px 10px;

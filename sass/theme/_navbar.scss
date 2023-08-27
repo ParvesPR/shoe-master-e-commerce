@@ -1,0 +1,24 @@
+nav {
+    @include container();
+    @include flexAround();
+    background-color: $background-white;
+    box-shadow: $box-shadow;
+    margin-top: marginTop(mt30);
+    padding: 15px 35px;
+}
+
+.nav-list li {
+    color: $primary-text;
+    display: inline-block;
+    text-align: center;
+
+    a {
+        display: block;
+        font-size: sizes(extra-small);
+        text-transform: uppercase;
+        font-weight: weights(normal);
+        color: $black-text;
+        margin: 0px 20px;
+       
+    }
+}
