@@ -5,6 +5,7 @@ nav {
     box-shadow: $box-shadow;
     margin-top: marginTop(mt30);
     padding: 15px 35px;
+    border-radius: 5px;
 }
 
 .nav-list li {
@@ -18,7 +19,12 @@ nav {
         text-transform: uppercase;
         font-weight: weights(normal);
         color: $black-text;
-        margin: 0px 20px;
-       
+        margin: 0px 15px;
+        transition: all ease-out 0.2s;
+
+        &:hover {
+            color: $accent-text;
+            font-size: sizes(small);
+        }
     }
 }
