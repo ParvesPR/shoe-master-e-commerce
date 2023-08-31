@@ -1,7 +1,8 @@
 nav {
-    @include container();
+    width: 1240px;
+    margin: auto;
     @include flexAround();
-    background-color: $background-white;
+    background-color: $color-white;
     box-shadow: $box-shadow;
     margin-top: marginTop(mt30);
     padding: 15px 35px;
@@ -9,14 +10,14 @@ nav {
 }
 
 .nav-list li {
-    color: $primary-text;
+    color: $color-white;
     display: inline-block;
     text-align: center;
 
     a {
         display: block;
         font-size: sizes(extra-small);
-        text-transform: uppercase;
+        text-transform: $text-transform;
         font-weight: weights(normal);
         color: $black-text;
         margin: 0px 15px;
