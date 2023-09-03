@@ -120,4 +120,21 @@ nav {
   font-size: 15px;
 }
 
+#feature-area {
+  margin: 100px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@ nav {
 .nav-list li {
     color: $color-white;
     display: inline-block;
-    text-align: center;
+    text-align: $text-center;
 
     a {
         display: block;

@@ -1,0 +1,11 @@
+#feature-area{
+    margin: margin(m-100)
+}
+.container {
+    @include container();
+}
+
+.feature-wrapper {
+    @include displayGrid();
+    text-align: $text-center;
+}

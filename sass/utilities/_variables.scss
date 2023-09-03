@@ -7,6 +7,7 @@ $background-color: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
 $box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 $line-height: 1.5;
 $text-transform: uppercase;
+$text-center: center;
 $font-weights: (
     "thin": 300,
     "regular":400,
@@ -27,4 +28,13 @@ $margin-top: (
     "mt20":20px,
     "mt25":25px,
     "mt30":30px,
-    )
+);
+$margin:(
+    "m-10":10px,
+    "m-15":15px,
+    "m-20":20px,
+    "m-25":25px,
+    "m-30":30px,
+    "m-50":50px,
+    "m-100":100px,
+)

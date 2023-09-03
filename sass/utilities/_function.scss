@@ -9,3 +9,7 @@
 @function marginTop($mt-name) {
     @return map-get($margin-top, $mt-name );
 }
+
+@function margin($margin-name) {
+    @return map-get($margin, $margin-name );
+}
