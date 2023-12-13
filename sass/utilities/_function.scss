@@ -10,6 +10,10 @@
     @return map-get($margin-top, $mt-name );
 }
 
+@function marginBottom($mb-name) {
+    @return map-get($margin-bottom, $mb-name);
+}
+
 @function margin($margin-name) {
     @return map-get($margin, $margin-name );
 }

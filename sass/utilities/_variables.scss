@@ -16,8 +16,8 @@ $font-weights: (
     "extra-bold":700,
 );
 $font-sizes: (
-    "extra-small":13px,
-    "small":15px,
+    "extra-small":14px,
+    "small":16px,
     "semi-title":1.9rem,
     "title":2.3rem,
     "section-title":3.7rem,
@@ -28,6 +28,14 @@ $margin-top: (
     "mt20":20px,
     "mt25":25px,
     "mt30":30px,
+);
+$margin-bottom: (
+    "mb5":5px,
+    "mb10":10px,
+    "mb15":15px,
+    "mb20":20px,
+    "mb25":25px,
+    "mb30":30px,
 );
 $margin:(
     "m-10":10px,
