@@ -13,3 +13,7 @@
 @function margin($margin-name) {
     @return map-get($margin, $margin-name );
 }
+
+@function padding($padding-name) {
+    @return map-get($padding, $padding-name);
+}

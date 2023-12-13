@@ -1,6 +1,7 @@
-#feature-area{
+#feature-area {
     margin: margin(m-100)
 }
+
 .container {
     @include container();
 }
@@ -8,4 +9,10 @@
 .feature-wrapper {
     @include displayGrid();
     text-align: $text-center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: padding(p-40);
+
+    &.feature-title {
+        margin: 10px;
+    }
 }

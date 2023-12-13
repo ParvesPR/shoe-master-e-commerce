@@ -135,6 +135,11 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+.feature-wrapper.feature-title {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
