@@ -123,13 +123,11 @@ nav {
 #feature-area {
   margin: 100px;
 }
-
-.container {
+#feature-area .container {
   width: 1140px;
   margin: 0 auto;
 }
-
-.feature-wrapper {
+#feature-area .container .feature-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
@@ -138,30 +136,30 @@ nav {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 40px;
 }
-.feature-wrapper .single-feature {
+#feature-area .container .feature-wrapper .single-feature {
   border-right: 1px solid #eee;
 }
-.feature-wrapper .single-feature:hover .feature-icon {
+#feature-area .container .feature-wrapper .single-feature:hover .feature-icon {
   color: #777;
 }
-.feature-wrapper .single-feature:last-child {
+#feature-area .container .feature-wrapper .single-feature:last-child {
   border-right: 0px;
 }
-.feature-wrapper .feature-icon {
+#feature-area .container .feature-wrapper .feature-icon {
   display: block;
   font-size: 1.9rem;
   color: #222;
   margin-bottom: 15px;
   transition: 0.5s;
 }
-.feature-wrapper .feature-title {
+#feature-area .container .feature-wrapper .feature-title {
   color: #222;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.8px;
   margin-bottom: 5px;
 }
-.feature-wrapper .feature-sub-title {
+#feature-area .container .feature-wrapper .feature-sub-title {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -189,6 +187,18 @@ nav {
   }
   .content-wrapper .banner-img img {
     display: none;
+  }
+  #feature-area .container {
+    width: 100%;
+  }
+  #feature-area .container .feature-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+    box-shadow: none;
+    padding: 25px;
+  }
+  #feature-area .container .feature-wrapper .single-feature {
+    border-right: 0px;
   }
 }
 

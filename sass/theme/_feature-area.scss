@@ -1,47 +1,48 @@
 #feature-area {
-    margin: margin(m-100)
-}
+    margin: margin(m-100);
 
-.container {
-    @include container();
-}
+    & .container {
+        @include container();
 
-.feature-wrapper {
-    @include displayGrid();
-    text-align: $text-center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: padding(p-40);
+        & .feature-wrapper {
+            @include displayGrid();
+            text-align: $text-center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: padding(p-40);
 
-    .single-feature {
-        border-right: 1px solid #eee;
-        &:hover .feature-icon{
-            color: $secondary-text;
+            & .single-feature {
+                border-right: 1px solid #eee;
+
+                &:hover .feature-icon {
+                    color: $secondary-text;
+                }
+            }
+
+            .single-feature:last-child {
+                border-right: 0px;
+            }
+
+            & .feature-icon {
+                display: block;
+                font-size: sizes(semi-title);
+                color: $black-text;
+                margin-bottom: marginBottom(mb15);
+                transition: 0.5s;
+            }
+
+            & .feature-title {
+                color: $black-text;
+                font-size: sizes(small);
+                font-weight: weights(normal);
+                letter-spacing: 0.8px;
+                margin-bottom: marginBottom(mb5);
+            }
+
+            & .feature-sub-title {
+                font-family: 'Poppins', sans-serif;
+                font-size: sizes(extra-small);
+                font-weight: weights(thin);
+            }
         }
-    }
-
-    .single-feature:last-child {
-        border-right: 0px;
-    }
-
-    .feature-icon {
-        display: block;
-        font-size: sizes(semi-title);
-        color: $black-text;
-        margin-bottom: marginBottom(mb15);
-        transition: 0.5s;
-    }
-
-    .feature-title {
-        color: $black-text;
-        font-size: sizes(small);
-        font-weight: weights(normal);
-        letter-spacing: 0.8px;
-        margin-bottom: marginBottom(mb5);
-    }
-
-    .feature-sub-title {
-        font-family: 'Poppins', sans-serif;
-        font-size: sizes(extra-small);
-        font-weight: weights(thin);
     }
 }

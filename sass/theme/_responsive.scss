@@ -4,6 +4,7 @@
         display: none;
     }
 
+    // HEADER SECTION
     .banner-area {
         width: 100%;
         background: url(../../assets/img/banner/banner-bg.jpg) no-repeat center;
@@ -29,5 +30,23 @@
             display: none;
         }
 
+    }
+
+    // FEATURE SECTION
+    #feature-area {
+        & .container {
+            width: 100%;
+
+            & .feature-wrapper {
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 25px;
+                box-shadow: none;
+                padding: 25px;
+
+                & .single-feature {
+                    border-right: 0px;
+                }
+            }
+        }
     }
 }
