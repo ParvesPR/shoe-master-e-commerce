@@ -134,7 +134,7 @@ nav {
   justify-content: center;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 40px;
+  padding: 40px 0px;
 }
 #feature-area .container .feature-wrapper .single-feature {
   border-right: 1px solid #eee;
@@ -211,15 +211,51 @@ nav {
 #category-area .category-wrapper {
   display: flex;
   justify-content: center;
+  margin: 100px 0px;
+  padding: 30px 0px;
 }
 #category-area .category-wrapper .category {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
 }
-#category-area .category-wrapper .category img {
+#category-area .category-wrapper .category .category-card {
+  position: relative;
+}
+#category-area .category-wrapper .category .category-card .category-img {
+  position: relative;
   max-width: 100%;
   height: 100%;
+}
+#category-area .category-wrapper .category .category-card .overlay {
+  position: absolute;
+  color: #fff;
+  top: 100%;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  transition: ease-in 0.2s;
+  z-index: 11;
+}
+#category-area .category-wrapper .category .category-card:hover .overlay {
+  top: 50%;
+  visibility: visible;
+}
+#category-area .category-wrapper .category .category-card::before {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+#category-area .category-wrapper .category .category-card:hover::before {
+  opacity: 0.5;
 }
 #category-area .category-wrapper .category-sale img {
   height: 100%;
