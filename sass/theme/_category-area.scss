@@ -1,0 +1,23 @@
+#category-area {
+    @include container();
+
+    & .category-wrapper {
+        display: flex;
+        justify-content: center;
+
+        & .category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+
+            & img {
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .category-sale img {
+                height: 100%;
+        }
+    }
+}
