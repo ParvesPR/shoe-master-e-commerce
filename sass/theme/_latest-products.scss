@@ -1,0 +1,19 @@
+#latest-products {
+    & .section-title {
+        text-align: $text-center;
+        color: $black-text;
+        font-size: sizes(title);
+        font-weight: weights(normal);
+        padding: padding(p-15);
+    }
+
+    & .section-sub-title {
+        text-align: $text-center;
+        color: $primary-color;
+        width: 100%-60%;
+        margin: auto;
+        font-size: sizes(extra-small);
+        line-height: $line-height;
+        margin-bottom: marginBottom(mb30);
+    }
+}

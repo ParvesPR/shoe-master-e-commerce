@@ -320,4 +320,21 @@ nav {
   opacity: 0.5;
 }
 
+#latest-products .section-title {
+  text-align: center;
+  color: #222;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding: 15px 0px;
+}
+#latest-products .section-sub-title {
+  text-align: center;
+  color: #828BB2;
+  width: 40%;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
