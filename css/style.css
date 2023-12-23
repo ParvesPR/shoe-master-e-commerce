@@ -320,6 +320,13 @@ nav {
   opacity: 0.5;
 }
 
+#latest-products {
+  background-color: rgba(246, 246, 246, 0.6392156863);
+}
+#latest-products .container {
+  width: 1140px;
+  margin: 0 auto;
+}
 #latest-products .section-title {
   text-align: center;
   color: #222;
@@ -330,11 +337,18 @@ nav {
 #latest-products .section-sub-title {
   text-align: center;
   color: #828BB2;
-  width: 40%;
+  width: 45%;
   margin: auto;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+#latest-products .single-product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

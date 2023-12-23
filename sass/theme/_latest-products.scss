@@ -1,4 +1,9 @@
 #latest-products {
+    background-color: #f6f6f6a3;
+    & .container {
+        @include container();
+    }
+
     & .section-title {
         text-align: $text-center;
         color: $black-text;
@@ -10,10 +15,15 @@
     & .section-sub-title {
         text-align: $text-center;
         color: $primary-color;
-        width: 100%-60%;
+        width: 100%-55%;
         margin: auto;
         font-size: sizes(extra-small);
         line-height: $line-height;
         margin-bottom: marginBottom(mb30);
+    }
+
+    & .single-product-wrapper {
+       @include displayGrid();
+       padding: padding(p-30);
     }
 }
