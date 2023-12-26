@@ -1,7 +1,13 @@
 #latest-products {
     background-color: #f6f6f6a3;
-    & .container {
-        @include container();
+
+    & .single-product-wrapper {
+        @include displayGrid();
+        padding: padding(p-30);
+        gap: 30px;
+        & .single-product img{
+            @include imgWidth();
+        }
     }
 
     & .section-title {
@@ -20,10 +26,5 @@
         font-size: sizes(extra-small);
         line-height: $line-height;
         margin-bottom: marginBottom(mb30);
-    }
-
-    & .single-product-wrapper {
-       @include displayGrid();
-       padding: padding(p-30);
     }
 }
