@@ -349,6 +349,20 @@ nav {
 #latest-products .single-product-wrapper .single-product .product-price :last-child {
   color: #777;
 }
+#latest-products .single-product-wrapper .single-product .product-icons {
+  margin: 15px 0px;
+}
+#latest-products .single-product-wrapper .single-product .product-icons span {
+  margin-right: 5px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 50px;
+  font-size: 14px;
+  background-color: #828BB2;
+  color: #fff;
+  padding: 8px;
+  border-radius: 100%;
+}
 #latest-products .section-title {
   text-align: center;
   color: #222;

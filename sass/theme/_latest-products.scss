@@ -17,19 +17,35 @@
                 padding: padding(p-10);
                 line-height: $line-height;
                 color: $black-text;
-                font-family: 'Poppins', sans-serif;  
+                font-family: 'Poppins', sans-serif;
             }
 
             & .product-price {
                 @include displayFlex();
                 font-size: sizes(extra-small);
                 font-weight: weights(bold);
-                
-                & :last-child{
+
+                & :last-child {
                     color: $secondary-text;
                 }
             }
-                    }
+
+            & .product-icons {
+        margin: margin(m-15);
+                & span {
+                    margin-right: 5px;
+                    display: inline-flex;
+                    align-items: center;
+                    column-gap: 50px;
+                    font-size: sizes(extra-small);
+                    background-color: $primary-color;
+                    color: $color-white;
+                    padding: 8px;
+                    border-radius: 100%;
+
+                }
+            }
+        }
     }
 
     & .section-title {
