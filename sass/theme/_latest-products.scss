@@ -5,9 +5,31 @@
         @include displayGrid();
         padding: padding(p-30);
         gap: 30px;
-        & .single-product img{
-            @include imgWidth();
-        }
+
+        & .single-product {
+            & img {
+                @include imgWidth()
+            }
+
+            & .product-title {
+                font-weight: weights(normal);
+                text-transform: $text-transform;
+                padding: padding(p-10);
+                line-height: $line-height;
+                color: $black-text;
+                font-family: 'Poppins', sans-serif;  
+            }
+
+            & .product-price {
+                @include displayFlex();
+                font-size: sizes(extra-small);
+                font-weight: weights(bold);
+                
+                & :last-child{
+                    color: $secondary-text;
+                }
+            }
+                    }
     }
 
     & .section-title {

@@ -331,6 +331,24 @@ nav {
   width: 100%;
   margin: auto;
 }
+#latest-products .single-product-wrapper .single-product .product-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  line-height: 1.5;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+#latest-products .single-product-wrapper .single-product .product-price {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#latest-products .single-product-wrapper .single-product .product-price :last-child {
+  color: #777;
+}
 #latest-products .section-title {
   text-align: center;
   color: #222;

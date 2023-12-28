@@ -8,7 +8,11 @@
     align-items: center;
     justify-content: center;
 }
-
+@mixin displayFlex{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
 @mixin flexAround {
     display: flex;
     align-items: center;
