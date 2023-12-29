@@ -350,18 +350,27 @@ nav {
   color: #777;
 }
 #latest-products .single-product-wrapper .single-product .product-icons {
-  margin: 15px 0px;
-}
-#latest-products .single-product-wrapper .single-product .product-icons span {
-  margin-right: 5px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 25px;
+  column-gap: 10px;
+  margin: 15px 0px;
+  transition: 0.3s;
+}
+#latest-products .single-product-wrapper .single-product .product-icons .single-icon span {
   font-size: 14px;
   background-color: #828BB2;
   color: #fff;
-  padding: 8px;
-  border-radius: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#latest-products .single-product-wrapper .single-product .product-icons .single-icon span:hover {
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  cursor: pointer;
 }
 #latest-products .section-title {
   text-align: center;

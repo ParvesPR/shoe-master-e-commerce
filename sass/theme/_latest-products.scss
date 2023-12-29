@@ -31,18 +31,26 @@
             }
 
             & .product-icons {
-        margin: margin(m-15);
-                & span {
-                    margin-right: 5px;
-                    display: inline-flex;
-                    align-items: center;
-                    column-gap: 50px;
+                @include displayFlex();
+                column-gap: 10px;
+                margin: margin(m-15);
+                transition: 0.3s;
+
+                & .single-icon span {
                     font-size: sizes(extra-small);
                     background-color: $primary-color;
                     color: $color-white;
-                    padding: 8px;
-                    border-radius: 100%;
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    text-align: $text-center;
+                    line-height: 30px;
+                }
 
+                & .single-icon span:hover {
+                    background: $background-color;
+                    cursor: pointer;
                 }
             }
         }
