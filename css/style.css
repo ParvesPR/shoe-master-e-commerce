@@ -350,16 +350,19 @@ nav {
   color: #777;
 }
 #latest-products .single-product-wrapper .single-product .product-icons {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 25px;
   column-gap: 10px;
   margin: 15px 0px;
-  transition: 0.3s;
+}
+#latest-products .single-product-wrapper .single-product .product-icons .single-icon:hover span {
+  margin-right: 80px;
 }
 #latest-products .single-product-wrapper .single-product .product-icons .single-icon span {
   font-size: 14px;
-  background-color: #828BB2;
+  background: #828BB2;
   color: #fff;
   border-radius: 50%;
   display: inline-block;
@@ -367,10 +370,32 @@ nav {
   height: 30px;
   text-align: center;
   line-height: 30px;
+  z-index: -1;
+  transition: all 0.3s;
 }
 #latest-products .single-product-wrapper .single-product .product-icons .single-icon span:hover {
   background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
   cursor: pointer;
+}
+#latest-products .single-product-wrapper .single-product .product-icons .single-icon .hover-text {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+  width: 100px;
+  text-align: center;
+  top: 8px;
+  left: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+#latest-products .single-product-wrapper .single-product .product-icons .single-icon:hover .hover-text {
+  left: 20px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 11;
 }
 #latest-products .section-title {
   text-align: center;

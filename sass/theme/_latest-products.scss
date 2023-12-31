@@ -31,14 +31,18 @@
             }
 
             & .product-icons {
+                position: relative;
                 @include displayFlex();
                 column-gap: 10px;
                 margin: margin(m-15);
-                transition: 0.3s;
+
+                & .single-icon:hover span {
+                    margin-right: 80px;
+                }
 
                 & .single-icon span {
                     font-size: sizes(extra-small);
-                    background-color: $primary-color;
+                    background: $primary-color;
                     color: $color-white;
                     border-radius: 50%;
                     display: inline-block;
@@ -46,11 +50,37 @@
                     height: 30px;
                     text-align: $text-center;
                     line-height: 30px;
+                    z-index: -1;
+                    transition: all 0.3s;
                 }
 
                 & .single-icon span:hover {
                     background: $background-color;
                     cursor: pointer;
+                }
+
+                & .single-icon .hover-text {
+                    position: absolute;
+                    font-size: 12px;
+                    font-weight: weights(bold);
+                    color: $black-text;
+                    text-transform: $text-transform;
+                    width: 100px;
+                    text-align: center;
+                    top: 8px;
+                    left: 0px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s;
+
+                }
+
+                & .single-icon:hover .hover-text {
+                    left: 20px;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 11;
+                    
                 }
             }
         }
