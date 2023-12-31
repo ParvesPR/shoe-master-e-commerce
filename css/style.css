@@ -318,13 +318,42 @@ nav {
 #latest-products {
   background-color: rgba(246, 246, 246, 0.6392156863);
 }
+#latest-products .section-title {
+  text-align: center;
+  color: #222;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding: 15px 0px;
+}
+#latest-products .section-sub-title {
+  text-align: center;
+  color: #828BB2;
+  width: 45%;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+#latest-products .latest-product-btn {
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 15px 70px;
+  margin: auto;
+  display: flex;
+  transition: 0.3s;
+}
 #latest-products .single-product-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
+  column-gap: 30px;
   padding: 30px 0px;
-  gap: 30px;
+  row-gap: 40px;
 }
 #latest-products .single-product-wrapper .single-product img {
   display: block;
@@ -398,22 +427,6 @@ nav {
   opacity: 1;
   visibility: visible;
   z-index: 11;
-}
-#latest-products .section-title {
-  text-align: center;
-  color: #222;
-  font-size: 2.3rem;
-  font-weight: 500;
-  padding: 15px 0px;
-}
-#latest-products .section-sub-title {
-  text-align: center;
-  color: #828BB2;
-  width: 45%;
-  margin: auto;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
