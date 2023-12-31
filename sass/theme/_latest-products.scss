@@ -31,13 +31,17 @@
             }
 
             & .product-icons {
-                position: relative;
                 @include displayFlex();
                 column-gap: 10px;
                 margin: margin(m-15);
 
+                & .single-icon {
+                    position: relative;
+                }
+
                 & .single-icon:hover span {
                     margin-right: 80px;
+                    cursor: pointer;
                 }
 
                 & .single-icon span {
@@ -54,9 +58,8 @@
                     transition: all 0.3s;
                 }
 
-                & .single-icon span:hover {
+                & .single-icon:hover span {
                     background: $background-color;
-                    cursor: pointer;
                 }
 
                 & .single-icon .hover-text {
@@ -80,7 +83,7 @@
                     opacity: 1;
                     visibility: visible;
                     z-index: 11;
-                    
+
                 }
             }
         }
