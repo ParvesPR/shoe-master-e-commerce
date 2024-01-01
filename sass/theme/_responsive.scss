@@ -1,7 +1,8 @@
 // SMALL DEVICES RESPONSIVE
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 668px) {
     .container {
         width: 100%;
+        padding: 0px 15px;
     }
 
     nav {
@@ -75,11 +76,22 @@
                     height: auto;
                 }
             }
-            & .category-sale{
-                & .category-sale-img{
+
+            & .category-sale {
+                & .category-sale-img {
                     display: block;
                 }
             }
+        }
+    }
+
+    .latest-products {
+        & .section-sub-title{
+            width: 90%;
+        }
+        & .single-product-wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
         }
     }
 }
