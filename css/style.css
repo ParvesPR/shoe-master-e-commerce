@@ -393,6 +393,26 @@ nav {
 }
 #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content {
   background: rgba(246, 246, 246, 0.6392156863);
+  text-align: center;
+}
+#exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content .exclusive-deal-content-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  width: 50%;
+  margin: auto;
+  padding: 15px 0px;
+}
+#exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content .product-price {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+}
+#exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content .product-price :last-child {
+  color: #777;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 668px) {

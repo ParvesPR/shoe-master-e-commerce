@@ -23,6 +23,27 @@
 
         & .exclusive-deal-content {
             background: #f6f6f6a3;
+            text-align: center;
+
+            & .exclusive-deal-content-title {
+                font-weight: weights(normal);
+                font-size: 1.4rem;
+                text-transform: $text-transform;
+                width: 50%;
+                margin: auto;
+                padding: padding(p-15)
+            }
+
+            & .product-price {
+                @include displayFlex();
+                font-size: sizes(extra-small);
+                font-weight: weights(bold);
+                justify-content: center;
+
+                & :last-child {
+                    color: $secondary-text;
+                }
+            }
         }
     }
 }
