@@ -20,6 +20,7 @@
     .content-wrapper {
         width: 100%;
         display: block;
+        padding: 0px 15px;
 
         & .banner-content {
             & h1 {
@@ -85,7 +86,7 @@
         }
     }
 
-    .latest-products {
+    #latest-products {
         & .section-sub-title{
             width: 90%;
         }

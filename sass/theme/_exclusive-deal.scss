@@ -1,0 +1,28 @@
+#exclusive-deal {
+    & .exclusive-deal-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & .exclusive-deal-img {
+            position: relative;
+            background: url(../../assets/img/exclusive.jpg) no-repeat center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        & .exclusive-deal-img::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            opacity: 0.4;
+        }
+
+        & .exclusive-deal-content {
+            background: #f6f6f6a3;
+        }
+    }
+}

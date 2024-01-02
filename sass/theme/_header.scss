@@ -7,7 +7,9 @@
 
 .content-wrapper {
     @include flexAround();
-    padding: 50px 10px;
+    width: 1140px;
+    margin: auto;
+    padding: padding(p-50);
 
     .banner-content {
         flex: 40%;
