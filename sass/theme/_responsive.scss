@@ -45,7 +45,7 @@
             width: 100%;
 
             & .feature-wrapper {
-                grid-template-columns: repeat(1, 1fr);
+                @include displayGridResponsive();
                 row-gap: 25px;
                 box-shadow: none;
                 padding: 25px;
@@ -69,15 +69,15 @@
             flex-direction: column;
 
             & .category {
-                flex-direction: column;
+            @include displayGridResponsive();
 
                 & .category-img {
-                    display: block;
-                    height: auto;
+                   @include imgWidth();
                 }
             }
 
             & .category-sale {
+                margin-top: 20px;
                 & .category-sale-img {
                     display: block;
                 }
@@ -90,7 +90,7 @@
             width: 90%;
         }
         & .single-product-wrapper {
-            grid-template-columns: repeat(1, 1fr);
+            @include displayGridResponsive();
             row-gap: 20px;
         }
     }
