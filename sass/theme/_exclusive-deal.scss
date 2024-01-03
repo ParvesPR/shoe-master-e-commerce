@@ -8,6 +8,36 @@
             background: url(../../assets/img/exclusive.jpg) no-repeat center;
             background-size: cover;
             height: 100vh;
+            z-index: -1;
+
+            & .exclusive-deal-promo {
+                text-align: center;
+                color: $color-white;
+
+                & h1 {
+                    font-size: sizes(semi-title);
+                    font-weight: weights(normal);
+                    margin-top: marginTop(mt30);
+                    margin-bottom: marginBottom(mb5);
+                }
+
+                & p {
+                    font-size: sizes(small);
+                    font-weight: weights(thin);
+                }
+            }
+            & .exclusive-promo-product{
+                @include displayGrid();
+                background: $color-white;
+                padding: 30px;
+                width: 100%-20%;
+                margin: auto;
+                margin-top: marginTop(mt25);
+                border-radius: 7px;
+                & img{
+                   @include imgWidth()
+                }
+            }
         }
 
         & .exclusive-deal-img::before {
@@ -18,20 +48,18 @@
             height: 100%;
             width: 100%;
             background: #000;
-            opacity: 0.4;
+            opacity: 0.6;
+            z-index: -1;
         }
 
         & .exclusive-deal-content {
             background: #f6f6f6a3;
             text-align: center;
 
-            & .exclusive-deal-content-title {
-                font-weight: weights(normal);
-                font-size: 1.4rem;
-                text-transform: $text-transform;
+            & img {
+                margin-top: marginTop(mt30);
+                padding-top: 50px;
                 width: 50%;
-                margin: auto;
-                padding: padding(p-15)
             }
 
             & .product-price {
@@ -44,6 +72,38 @@
                     color: $secondary-text;
                 }
             }
+
+            & .exclusive-deal-content-title {
+                font-weight: weights(normal);
+                font-size: 1.4rem;
+                text-transform: $text-transform;
+                width: 50%;
+                margin: auto;
+                padding: padding(p-15)
+            }
+
+            & .addBagIcon {
+                @include displayFlex();
+                column-gap: 10px;
+                justify-content: center;
+                padding: padding(p-15);
+
+                & span {
+                    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+                    color: #fff;
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    border-radius: 50px;
+                    font-size: sizes(extra-small);
+                }
+
+                & p {
+                    font-size: sizes(extra-small);
+                }
+            }
+
         }
     }
 }
