@@ -622,6 +622,10 @@ nav {
   #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content .exclusive-deal-content-title {
     width: 100%;
   }
+  #brand-logo-area .brands-logo {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

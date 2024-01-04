@@ -112,9 +112,10 @@
                     margin-top: marginTop(mt30);
                     padding-top: 50px;
 
-                     & h1 {
+                    & h1 {
                         font-size: 2.2rem;
                     }
+
                     & p {
                         padding: 0px 15px;
                     }
@@ -145,4 +146,12 @@
             }
         }
     }
+
+    //BRANDS LOGO SECTION
+    #brand-logo-area{
+        & .brands-logo{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    } 
 }
