@@ -2,6 +2,7 @@ nav {
     width: 1240px;
     margin: auto;
     @include flexAround();
+    justify-content: space-between;
     background-color: $color-white;
     box-shadow: $box-shadow;
     margin-top: marginTop(mt30);

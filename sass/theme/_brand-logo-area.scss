@@ -1,0 +1,18 @@
+#brand-logo-area {
+    margin: margin(m-50);
+    padding: padding(p-30);
+
+    & .brands-logo {
+        @include flexAround();
+
+        & a img {
+            opacity: 0.3;
+            transition: ease-in-out 0.3s all;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
