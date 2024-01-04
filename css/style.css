@@ -582,6 +582,9 @@ nav {
   #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-deal-promo h1 {
     font-size: 2.2rem;
   }
+  #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-deal-promo p {
+    padding: 0px 15px;
+  }
   #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-promo-product {
     background: #fff;
     padding: 10px;
@@ -589,6 +592,15 @@ nav {
   #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-promo-product img {
     width: 100%;
     padding: 0px 10px;
+  }
+  #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content {
+    padding: 0px 15px;
+  }
+  #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content img {
+    width: 100%;
+  }
+  #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-content .exclusive-deal-content-title {
+    width: 100%;
   }
 }
 
