@@ -70,15 +70,16 @@
             flex-direction: column;
 
             & .category {
-            @include displayGridResponsive();
+                @include displayGridResponsive();
 
                 & .category-img {
-                   @include imgWidth();
+                    @include imgWidth();
                 }
             }
 
             & .category-sale {
                 margin-top: 20px;
+
                 & .category-sale-img {
                     display: block;
                 }
@@ -86,13 +87,42 @@
         }
     }
 
+    // LATEST PRODUCTS SECTION
     #latest-products {
-        & .section-sub-title{
+        & .section-sub-title {
             width: 90%;
         }
+
         & .single-product-wrapper {
             @include displayGridResponsive();
             row-gap: 20px;
+        }
+    }
+
+    // EXCLUSIVE PRODUCT SECTION
+    #exclusive-deal {
+        & .exclusive-deal-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            & .exclusive-deal-img {
+                height: 80vh;
+                & .exclusive-deal-promo{
+                    margin-top: marginTop(mt30);
+                    padding-top: 50px;
+                    h1{
+                        font-size: 2.2rem;
+                    }
+                }
+                & .exclusive-promo-product{
+                    background: #fff;
+                    padding: 10px;
+                    & img{
+                        width: 100%;
+                        padding:0px 10px;
+                                    }
+                }
+            }
         }
     }
 }
