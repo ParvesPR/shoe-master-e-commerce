@@ -26,17 +26,32 @@
                     font-weight: weights(thin);
                 }
             }
-            & .exclusive-promo-product{
+
+            & .exclusive-promo-product {
                 @include displayGrid();
-                background: $color-white;
+                background: #ffffff29;
                 padding: 30px;
                 width: 100%-20%;
                 margin: auto;
                 margin-top: marginTop(mt25);
                 border-radius: 7px;
-                & img{
-                   @include imgWidth()
+
+                & img {
+                    display: block;
+                    width: 50%;
+                    margin: auto;
+                    border-right: 1px solid #eee;
+                    padding-right: 10px;
+
+                    &:last-child {
+                        border-right: 0px;
+                        padding-right: 0px;
+                    }
                 }
+            }
+            & .exclusive-product-btn{
+                @include button();
+                margin-top: marginTop(mt30);
             }
         }
 

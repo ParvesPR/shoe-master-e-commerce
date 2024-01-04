@@ -20,16 +20,7 @@
     }
 
     & .latest-product-btn {
-        background: $background-color;
-        border: none;
-        border-radius: 50px;
-        color: $color-white;
-        text-transform: $text-transform;
-        font-weight: weights(bold);
-        padding: 15px 70px;
-        margin: auto;
-        display: flex;
-        transition: 0.3s;
+      @include button()
     }
 
     & .single-product-wrapper {
