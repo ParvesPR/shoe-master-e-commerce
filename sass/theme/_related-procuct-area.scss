@@ -1,0 +1,18 @@
+#related-product-area {
+    & .related-product-title{
+        text-align: $text-center;
+        margin-bottom: marginBottom(mb30);
+        & h1{
+            font-size: sizes(title);
+            font-weight: weights(normal);
+            margin-bottom: marginBottom(mb10);
+        }
+        & p{
+            width: 50%;
+            margin: auto;
+            font-size: sizes(extra-small);
+            color: $primary-color;
+            line-height: $line-height;
+        }
+    } 
+}
