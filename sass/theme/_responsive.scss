@@ -148,10 +148,22 @@
     }
 
     //BRANDS LOGO SECTION
-    #brand-logo-area{
-        & .brands-logo{
+    #brand-logo-area {
+        & .brands-logo {
             flex-direction: row;
             flex-wrap: wrap;
         }
-    } 
+    }
+
+    // RELATED PRODUCT SECTION
+    #related-product-area {
+        & .related-product-title {
+            text-align: $text-center;
+            margin-bottom: marginBottom(mb30);
+
+            & p {
+                width: 100%;
+            }
+        }
+    }
 }
