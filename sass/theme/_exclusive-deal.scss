@@ -10,6 +10,11 @@
             height: 100vh;
             z-index: -1;
 
+            & .exclusive-deal-img-wrapper {
+              margin-top: 200px;
+
+            }
+
             & .exclusive-deal-promo {
                 text-align: center;
                 color: $color-white;
@@ -30,7 +35,7 @@
             & .exclusive-promo-product {
                 @include displayGrid();
                 background: #ffffff29;
-                padding: 30px;
+                padding: 20px 15px;
                 width: 100%-20%;
                 margin: auto;
                 margin-top: marginTop(mt25);
@@ -49,7 +54,8 @@
                     }
                 }
             }
-            & .exclusive-product-btn{
+
+            & .exclusive-product-btn {
                 @include button();
                 margin-top: marginTop(mt30);
             }

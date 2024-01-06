@@ -35,17 +35,25 @@
                 & .related-product-name {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 5px
-                }
+                    row-gap: 5px;
 
-                & .product-price {
-                    display: flex;
-                    column-gap: 10px;
-                    justify-content: flex-start;
-                    font-size: sizes(extra-small);
+                    & h4 {
+                        color: $black-text;
+                        font-weight: weights(thin);
+                        text-transform: $text-transform;
+                        font-size: sizes(extra-small);
+                    }
 
-                    & :last-child() {
-                        color: $primary-color;
+                    & .product-price {
+                        display: flex;
+                        column-gap: 10px;
+                        justify-content: flex-start;
+                        font-size: sizes(extra-small);
+                        font-weight: weights(normal);
+
+                        & :last-child {
+                            color: $primary-color;
+                        }
                     }
                 }
             }

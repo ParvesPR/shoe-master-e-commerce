@@ -383,6 +383,9 @@ nav {
   height: 100vh;
   z-index: -1;
 }
+#exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-deal-img-wrapper {
+  margin-top: 200px;
+}
 #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-deal-promo {
   text-align: center;
   color: #fff;
@@ -403,7 +406,7 @@ nav {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1607843137);
-  padding: 30px;
+  padding: 20px 15px;
   width: 80%;
   margin: auto;
   margin-top: 25px;
@@ -548,13 +551,20 @@ nav {
   flex-direction: column;
   row-gap: 5px;
 }
-#related-product-area .related-product-wrapper .related-products .single-related-product .product-price {
+#related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name h4 {
+  color: #222;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name .product-price {
   display: flex;
   column-gap: 10px;
   justify-content: flex-start;
   font-size: 14px;
+  font-weight: 500;
 }
-#related-product-area .related-product-wrapper .related-products .single-related-product .product-price :last-child() {
+#related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name .product-price :last-child {
   color: #828BB2;
 }
 #related-product-area .related-product-wrapper .related-products-img {
@@ -644,6 +654,9 @@ nav {
   }
   #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img {
     height: 80vh;
+  }
+  #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-deal-img-wrapper {
+    margin-top: 0px;
   }
   #exclusive-deal .exclusive-deal-wrapper .exclusive-deal-img .exclusive-deal-promo {
     margin-top: 30px;

@@ -108,6 +108,10 @@
             & .exclusive-deal-img {
                 height: 80vh;
 
+                & .exclusive-deal-img-wrapper {
+                    margin-top: 0px;
+                }
+
                 & .exclusive-deal-promo {
                     margin-top: marginTop(mt30);
                     padding-top: 50px;
