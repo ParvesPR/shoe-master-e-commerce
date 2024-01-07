@@ -20,17 +20,21 @@
     }
 
     & .related-product-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: padding(p-40);
 
         & .related-products {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+
 
             & .single-related-product {
                 display: flex;
                 column-gap: 15px;
-                align-items: center;
+                margin-bottom: marginBottom(mb30);
 
                 & .related-product-name {
                     display: flex;
@@ -60,7 +64,12 @@
         }
 
         & .related-products-img {
-            @include imgWidth()
+            flex: 0 0 25%;
+
+            & img {
+                @include imgWidth
+            }
+
         }
     }
 }
