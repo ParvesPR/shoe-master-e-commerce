@@ -34,12 +34,26 @@
             & .single-related-product {
                 display: flex;
                 column-gap: 15px;
+                align-items: center;
                 margin-bottom: marginBottom(mb30);
+                padding: 10px;
+                transition: ease-in-out 0.2s all;
+
+                &:hover {
+                    box-shadow: $box-shadow;
+                    cursor: pointer;
+                    transform: scale(1.05);
+                    border-radius: 5px;
+                }
 
                 & .related-product-name {
                     display: flex;
                     flex-direction: column;
                     row-gap: 5px;
+
+                    &:hover h4 {
+                        color: red;
+                    }
 
                     & h4 {
                         color: $black-text;

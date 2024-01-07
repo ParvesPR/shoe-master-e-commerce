@@ -547,12 +547,24 @@ nav {
 #related-product-area .related-product-wrapper .related-products .single-related-product {
   display: flex;
   column-gap: 15px;
+  align-items: center;
   margin-bottom: 30px;
+  padding: 10px;
+  transition: ease-in-out 0.2s all;
+}
+#related-product-area .related-product-wrapper .related-products .single-related-product:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transform: scale(1.05);
+  border-radius: 5px;
 }
 #related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+}
+#related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name:hover h4 {
+  color: red;
 }
 #related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name h4 {
   color: #222;
