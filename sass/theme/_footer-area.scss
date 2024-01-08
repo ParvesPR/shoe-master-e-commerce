@@ -1,0 +1,34 @@
+#footer-area-section {
+    background: $black-text;
+    padding: padding(p-100);
+
+    & .footer-wrapper {
+        @include displayGrid();
+        align-items: baseline;
+        h3 {
+            color: $color-white;
+            margin-bottom: marginBottom(mb20);
+        }
+        p{
+            color: $secondary-text;
+            font-size: sizes(extra-small);
+            line-height: $line-height;
+        }
+
+        & .about-us {
+            flex-basis: 25%;
+        }
+
+        & .newsletter {
+            flex-basis: 25%;
+        }
+
+        & .instagram-feed {
+            flex-basis: 25%;
+        }
+
+        & .follow-us-icons {
+            flex-basis: 25%;
+        }
+    }
+}
