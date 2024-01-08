@@ -714,6 +714,23 @@ nav {
   #related-product-area .related-product-title p {
     width: 100%;
   }
+  #related-product-area .related-product-wrapper {
+    padding: 0px;
+  }
+  #related-product-area .related-product-wrapper .related-products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  #related-product-area .related-product-wrapper .related-products .single-related-product {
+    margin-bottom: 10px;
+  }
+  #related-product-area .related-product-wrapper .related-products .single-related-product .related-product-name h4 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  #related-product-area .related-products-img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

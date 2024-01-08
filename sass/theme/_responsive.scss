@@ -169,5 +169,29 @@
                 width: 100%;
             }
         }
+
+        & .related-product-wrapper {
+            padding: 0px;
+
+            & .related-products {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 0px;
+
+                & .single-related-product {
+                    margin-bottom: marginBottom(mb10);
+
+                    & .related-product-name {
+                        & h4 {
+                            font-weight: weights(normal);
+                            font-size: sizes(small);
+                        }
+                    }
+                }
+            }
+        }
+
+        & .related-products-img {
+            display: none;
+        }
     }
 }
