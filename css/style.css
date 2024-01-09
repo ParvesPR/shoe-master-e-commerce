@@ -600,6 +600,7 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
+  column-gap: 20px;
   align-items: baseline;
 }
 #footer-area-section .footer-wrapper h3 {
@@ -637,6 +638,13 @@ nav {
 }
 #footer-area-section .footer-wrapper .instagram-feed {
   flex-basis: 25%;
+}
+#footer-area-section .footer-wrapper .instagram-feed .instagram-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 8px;
 }
 #footer-area-section .footer-wrapper .follow-us-icons {
   flex-basis: 25%;

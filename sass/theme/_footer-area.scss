@@ -4,12 +4,15 @@
 
     & .footer-wrapper {
         @include displayGrid();
+        column-gap: 20px;
         align-items: baseline;
+
         h3 {
             color: $color-white;
             margin-bottom: marginBottom(mb20);
         }
-        p{
+
+        p {
             color: $secondary-text;
             font-size: sizes(extra-small);
             line-height: $line-height;
@@ -21,19 +24,23 @@
 
         & .newsletter {
             flex-basis: 25%;
-            p{
+
+            p {
                 margin-bottom: marginBottom(mb10);
             }
-            .newsletter-sub{
+
+            .newsletter-sub {
                 display: flex;
                 align-items: center;
             }
-            & .subscribe-input{
+
+            & .subscribe-input {
                 padding: 10px 30px 10px 5px;
                 color: $secondary-text;
                 border: none;
             }
-            span{
+
+            span {
                 color: $color-white;
                 background: $background-color;
                 padding: 8px;
@@ -43,6 +50,11 @@
 
         & .instagram-feed {
             flex-basis: 25%;
+
+            & .instagram-feed-grid {
+                @include displayGrid();
+                gap: 8px;
+            }
         }
 
         & .follow-us-icons {
