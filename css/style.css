@@ -617,6 +617,24 @@ nav {
 #footer-area-section .footer-wrapper .newsletter {
   flex-basis: 25%;
 }
+#footer-area-section .footer-wrapper .newsletter p {
+  margin-bottom: 10px;
+}
+#footer-area-section .footer-wrapper .newsletter .newsletter-sub {
+  display: flex;
+  align-items: center;
+}
+#footer-area-section .footer-wrapper .newsletter .subscribe-input {
+  padding: 10px 30px 10px 5px;
+  color: #777;
+  border: none;
+}
+#footer-area-section .footer-wrapper .newsletter span {
+  color: #fff;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  padding: 8px;
+  border-left: none;
+}
 #footer-area-section .footer-wrapper .instagram-feed {
   flex-basis: 25%;
 }

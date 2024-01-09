@@ -21,6 +21,24 @@
 
         & .newsletter {
             flex-basis: 25%;
+            p{
+                margin-bottom: marginBottom(mb10);
+            }
+            .newsletter-sub{
+                display: flex;
+                align-items: center;
+            }
+            & .subscribe-input{
+                padding: 10px 30px 10px 5px;
+                color: $secondary-text;
+                border: none;
+            }
+            span{
+                color: $color-white;
+                background: $background-color;
+                padding: 8px;
+                border-left: none;
+            }
         }
 
         & .instagram-feed {
