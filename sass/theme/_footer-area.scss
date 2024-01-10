@@ -62,7 +62,7 @@
 
             & ul li {
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 20px;
                 margin-top: 10px;
 
                 & a {
@@ -75,6 +75,17 @@
                     }
                 }
             }
+        }
+    }
+
+    .footer-bottom-text {
+        text-align: center;
+        padding: padding(p-50);
+        color: $color-white;
+
+        span {
+            color: $accent-text;
+            font-weight: weights(bold);
         }
     }
 }

@@ -194,4 +194,27 @@
             display: none;
         }
     }
+
+    // FOOTER SECTION
+    #footer-area-section {
+        padding: padding(p-50);
+
+        & .footer-wrapper {
+            @include displayGridResponsive();
+            row-gap: 30px;
+            justify-items: start;
+
+            h3 {
+                margin-bottom: marginBottom(mb5);
+            }
+
+            & .instagram-feed {
+
+                & .instagram-feed-grid {
+                    column-gap: 30px;
+                    row-gap: 10px;
+                }
+            }
+        }
+    }
 }
