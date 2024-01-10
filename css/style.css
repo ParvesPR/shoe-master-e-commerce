@@ -649,6 +649,19 @@ nav {
 #footer-area-section .footer-wrapper .follow-us-icons {
   flex-basis: 25%;
 }
+#footer-area-section .footer-wrapper .follow-us-icons ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#footer-area-section .footer-wrapper .follow-us-icons ul li a {
+  display: block;
+  color: #fff;
+  transition: ease-in-out 0.5s;
+}
+#footer-area-section .footer-wrapper .follow-us-icons ul li a :hover {
+  color: #ffba00;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 668px) {
   .container {
